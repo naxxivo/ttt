@@ -1,0 +1,40 @@
+body {
+  background: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 46px);
+  grid-template-rows: repeat(8, 46px);
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.gem {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gem:hover {
+  transform: scale(1.05);
+}
+
+.red { background: #ffc1c1; }
+.green { background: #c1f0c1; }
+.blue { background: #c1e1ff; }
+.yellow { background: #fff9c1; }
+.purple { background: #e1c1ff; }
+.orange { background: #ffe2c1; }
