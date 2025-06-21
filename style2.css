@@ -1,0 +1,40 @@
+body {
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 48px);
+  grid-template-rows: repeat(8, 48px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.gem {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s;
+}
+
+.gem:hover {
+  transform: scale(1.1);
+}
+
+.red { background: #ff4d4d; box-shadow: 0 0 8px #ff4d4d; }
+.green { background: #00ff99; box-shadow: 0 0 8px #00ff99; }
+.blue { background: #3399ff; box-shadow: 0 0 8px #3399ff; }
+.yellow { background: #ffff00; box-shadow: 0 0 8px #ffff00; }
+.purple { background: #cc33ff; box-shadow: 0 0 8px #cc33ff; }
+.orange { background: #ff9933; box-shadow: 0 0 8px #ff9933; }
